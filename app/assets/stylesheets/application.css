@@ -13,3 +13,58 @@
  *= require_tree .
  *= require_self
  */
+
+
+ /* Applique un style général au corps de la page */
+body {
+  font-family: 'Arial', sans-serif; /* Tu peux choisir la police qui te plaît */
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5; /* Une couleur de fond douce */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style du conteneur du formulaire */
+.form-container {
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Une ombre légère pour donner de la profondeur */
+  max-width: 500px; /* Ou la largeur que tu préfères */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Style des titres */
+h1 {
+  color: #333; /* Une couleur de texte foncée */
+  text-align: center;
+}
+
+/* Style des champs de formulaire */
+input[type="text"] {
+  width: calc(100% - 20px); /* 100% de la largeur du conteneur moins un peu pour la marge */
+  padding: 10px;
+  margin-bottom: 1em; /* Espace en dessous du champ de texte */
+  border: 1px solid #ccc; /* Une bordure subtile */
+  border-radius: 4px; /* Des coins arrondis */
+}
+
+/* Style du bouton de soumission */
+input[type="submit"] {
+  background-color: #008CBA; /* Une couleur de fond bleue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Change le style du bouton lorsqu'on le survole */
+input[type="submit"]:hover {
+  background-color: #005f73;
+}
